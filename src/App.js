@@ -7,6 +7,7 @@ import AdminSpecialties from './pages/AdminSpecialties';
 import AdminReviews from './pages/AdminReviews';
 import AdminAppointments from './pages/AdminAppointments';
 import AdminStatistics from './pages/AdminStatistics';
+import './AuthForm.css';
 
 const Home = () => <h1>Главная</h1>;
 
@@ -52,30 +53,28 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: 300, margin: 'auto', paddingTop: 50 }}>
+    <form onSubmit={handleSubmit} className="auth-form">
       <h2>Вход</h2>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <div>
+      {error && <p className="error">{error}</p>}
+      <div className="form-group">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          style={{ width: '100%', padding: 8, marginBottom: 10 }}
         />
       </div>
-      <div>
+      <div className="form-group">
         <input
           type="password"
           placeholder="Пароль"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          style={{ width: '100%', padding: 8, marginBottom: 10 }}
         />
       </div>
-      <button type="submit" style={{ padding: 10, width: '100%' }}>Войти</button>
+      <button type="submit" className="btn">Войти</button>
     </form>
   );
 };

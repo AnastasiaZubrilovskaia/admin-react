@@ -18,7 +18,7 @@ function AdminDoctors() {
     phone: '',
     experience: '',
     education: '',
-    specialtyId: '',  // теперь здесь id, а не имя
+    specialtyId: '',  
   });
 
   useEffect(() => {
@@ -91,7 +91,7 @@ function AdminDoctors() {
       phone: doctor.phone || '',
       experience: doctor.experience?.toString() || '',
       education: doctor.education || '',
-      specialtyId: doctor.specialtyId || '',  // id, а не имя
+      specialtyId: doctor.specialtyId || '',  
     });
   };
 

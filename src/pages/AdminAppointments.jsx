@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './AdminDoctors.css'; // Можно использовать общие стили
+import './AdminDoctors.css'; 
 
 function AdminAppointments() {
   const [appointments, setAppointments] = useState([]);

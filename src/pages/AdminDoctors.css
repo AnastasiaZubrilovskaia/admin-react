@@ -117,7 +117,7 @@
   }
   
   .admin-doctors-table th {
-    background-color: #0d6efd; /* ярко-синий, как на странице пользователей */
+    background-color: #0d6efd; 
     color: white;
     font-weight: 600;
   }
@@ -145,7 +145,7 @@
     transition: background-color 0.2s ease;
   }
   
-  /* Синие кнопки: Редактировать, Сохранить, Отмена */
+  
   .action-buttons button:not(.delete-button) {
     background-color: #0d6efd;
     border-color: #0d6efd;
@@ -156,7 +156,7 @@
     border-color: #084cd9;
   }
   
-  /* Красная кнопка: Удалить */
+
   .delete-button {
     background-color: #dc3545;
     border-color: #dc3545;

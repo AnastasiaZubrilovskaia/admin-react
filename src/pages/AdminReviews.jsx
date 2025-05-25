@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import './AdminDoctors.css'; // или отдельный файл, если надо
+import './AdminDoctors.css'; 
 
 function AdminReviews() {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [token, setToken] = useState('');
-  const [filterStatus, setFilterStatus] = useState(''); // пусто = все
+  const [filterStatus, setFilterStatus] = useState(''); 
 
-  // Для редактирования статуса
   const [editingReviewId, setEditingReviewId] = useState(null);
   const [editStatus, setEditStatus] = useState('');
 

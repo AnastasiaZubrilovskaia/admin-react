@@ -145,7 +145,6 @@ function AdminUsers() {
     <div style={{ maxWidth: 900, margin: 'auto', padding: 20 }}>
       <h1>Пользователи</h1>
 
-      {/* Таблица пользователей */}
       <table border="1" cellPadding="8" cellSpacing="0" style={{ width: '100%', marginBottom: 20 }}>
         <thead>
           <tr>
@@ -204,7 +203,6 @@ function AdminUsers() {
         </tbody>
       </table>
 
-      {/* Форма создания нового админа */}
       <h2>Создать администратора</h2>
       <form onSubmit={handleCreateAdmin} style={{ maxWidth: 400 }}>
         <input
